@@ -7,7 +7,7 @@ const signin = (username, password) => async (dispatch) => {
         type: USER_SIGNIN_REQUEST, payload :{username,password}
     });
     try {
-        const {data} = await Axios.post("https://projectserver10758282.herokuapp.com//auth/api/login", {username,password});
+        const {data} = await Axios.post("https://projectserver10758282.herokuapp.com/auth/api/login", {username,password});
         dispatch({
             type: USER_SIGNIN_SUCCESS, payload:data
         });
@@ -25,7 +25,7 @@ const register = (name, username, password,email) => async (dispatch) => {
         type: USER_REGISTER_REQUEST, payload :{name, username,password,email}
     });
     try {
-        const {data} = await Axios.post("https://projectserver10758282.herokuapp.com//auth/api/register", {username,password,name,email});
+        const {data} = await Axios.post("https://projectserver10758282.herokuapp.com/auth/api/register", {username,password,name,email});
         dispatch({
             type: USER_REGISTER_SUCCESS, payload:data
         });
@@ -41,7 +41,7 @@ const update = ({ userId, name, email, password }) => async (dispatch, getState)
     const { userSignin: { userInfo } } = getState();
     dispatch({ type: USER_UPDATE_REQUEST, payload: { userId, name, email, password } });
     try {
-      const { data } = await Axios.put("https://projectserver10758282.herokuapp.com//auth/api/users/" + userId,
+      const { data } = await Axios.put("https://projectserver10758282.herokuapp.com/auth/api/users/" + userId,
         { name, email, password }, {
         headers: {
           Authorization: 'Bearer ' + userInfo.token
