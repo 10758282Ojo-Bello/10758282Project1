@@ -1,38 +1,145 @@
-.App {
+.form{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 70% !important;
+}
+.form-container{
+  display:flex;
+  flex-direction: column;
+  width:32rem;
+  padding:2rem;
+  border: .1rem #fff solid;
+  list-style: none;
+  background-color: white;
+
+}
+
+.form-container li{
+  display:flex;
+  flex-direction: column;
+  margin-bottom:1rem ;
+  background-color: white;
+
+}
+label{
+  display: flex;
+}
+.formheader{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nomargin{
+  margin:0 !important
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.signInButton{
+  padding:1rem;
+  border-radius:1rem;
+  border:0;
+  background-color: #fcb800;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.signInButton:hover{
+  border:5px solid rgb(255,255,255,0.6);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formsubmitbutton{
+  width:70%;
+  margin: 0 auto
+}
+.fullwidth{
+  width:100%;
+  display: flex;
+}
+.pagecontent{
+  text-align: center;
+  align-items: center;
+}
+body {
+  transform: scale(1,0.8);
+  transform-origin: 0 0;
+}
+
+.homepagenav{
+  text-align: center;
+  align-items: center;
+}
+
+.authBar{
+  display: flex;
+}
+.formDiv{
+  height:50%;
+  background-color:white
+}
+.authBar{
+  height: 22.75em !important;
+  background-color: white;
+  margin-right: 2em;
+}
+.authNavItem{
+  padding:3em;
+  background-color:white;
+  height: 23.6%;
+}
+.authNavItem:hover{
+  background-color: #fcb800;
+}
+.active{
+  background-color: #fcb800;
+}
+.myLinks{
+  text-decoration: none;
+  color:black;
+}
+body{
+  background-image: url("https://images.unsplash.com/photo-1563748415118-f5214efd4bcf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.authNavImage{
+  width:10rem;
+  background-image: url("https://images.unsplash.com/photo-1556155092-8707de31f9c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+.authNavImage img{
+  width:150%
+}
+input{
+  border:0;
+  background-color: #f1f1f1;
+  height:2.75rem;
+  display: flex;
+  float: right;
+  width: 100%;
+
+}
+input:focus{
+  background-color: transparent;
+  outline: none;
+}
+input:active{
+  background-color: transparent;
+  outline: none;
+}
+.input{
+  background-color: #f1f1f1;
+  display: flex;
+}
+span{
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.75em;
+  margin-right: 1rem;
+  margin-left:1rem
+}
+
+text{
+  color: white;
+}
+h1{
+  color:white
 }
